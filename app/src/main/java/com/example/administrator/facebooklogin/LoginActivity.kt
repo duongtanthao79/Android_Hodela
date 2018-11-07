@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
             if (et_user_name.text.isBlank() || et_password.text.isBlank()) {
                 Toast.makeText(this, "Please in put correct username/password", Toast.LENGTH_SHORT).show()
             } else {
-                var intent = Intent(this, MainActivity::class.java)
+                var intent = Intent(this, ListViewActivity::class.java)
                 intent.putExtra("user_name",et_user_name.text.toString())
                startActivityForResult(intent, 0)
             }
